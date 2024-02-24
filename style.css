@@ -5,7 +5,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg, #FFC0CB, #FF69B4); /* Gradient background */
+    background: linear-gradient(45deg, #FFC0CB, #FF69B4);
 }
 
 .heart-container {
@@ -46,26 +46,26 @@ body {
 
 .heart:before {
     top: 0;
-    left: 17.5px; /* Adjusted left position */
+    left: 17.5px;
     transform: rotate(-45deg);
 }
 
 .heart:after {
     top: 0;
-    right: 17.5px; /* Adjusted right position */
+    right: 17.5px;
     transform: rotate(45deg);
 }
 
 .container {
     position: relative;
     text-align: center;
-    max-width: 800px; /* Limiting container width */
-    padding: 0 20px; /* Adding padding */
-    color: #333; /* Text color */
+    max-width: 800px;
+    padding: 0 20px;
+    color: #333;
 }
 
 h1, h2, p, p2 {
-    font-family: 'Arial', sans-serif; /* Font family */
+    font-family: 'Arial', sans-serif;
 }
 
 h1 {
