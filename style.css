@@ -5,7 +5,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg, #FFC0CB, #FF69B4);
+    background: linear-gradient(45deg, #FFC0CB, #FF69B4); /* Gradient background */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
 }
 
 .heart-container {
@@ -39,33 +40,32 @@ body {
     content: '';
     position: absolute;
     height: 70px;
-    width: 35px;
+    width: 70px;
     background: #f20044;
-    border-radius: 70px 70px 0 0;
+    border-radius: 70px;
+    box-shadow: -35px 0 30px #f20044, 35px 0 30px #f20044;
 }
 
 .heart:before {
-    top: 0;
-    left: 7.5px;
-    transform: rotate(-45deg);
+    top: -35px;
+    left: 0;
 }
 
 .heart:after {
     top: 0;
-    right: 7.5px;
-    transform: rotate(45deg);
+    left: -35px;
 }
 
 .container {
     position: relative;
     text-align: center;
-    max-width: 800px;
-    padding: 0 20px;
-    color: #333;
+    max-width: 800px; /* Limiting container width */
+    padding: 0 20px; /* Adding padding */
+    color: #333; /* Text color */
 }
 
 h1, h2, p, p2 {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Font family */
 }
 
 h1 {
