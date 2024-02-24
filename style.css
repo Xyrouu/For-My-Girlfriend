@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(45deg, #FFC0CB, #FF69B4); /* Gradient background */
+    overflow: hidden; /* Prevent scrolling */
 }
 
 .heart {
@@ -13,7 +14,6 @@ body {
     width: 70px;
     background: #f20044;
     position: relative;
-    left: 175px;
     transform: rotate(-45deg);
     box-shadow: -10px 10px 90px #f20044;
     animation: heart 0.6s linear infinite;
@@ -31,26 +31,27 @@ body {
     }
 }
 
-.heart:before {
-    content: '';
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    background: #f20044;
-    top: -50%;
-    border-radius: 50px;
-    box-shadow: -10px -10px 90px #f20044;
-}
-
+.heart:before,
 .heart:after {
     content: '';
     position: absolute;
     height: 70px;
     width: 70px;
     background: #f20044;
-    right: -50%;
-    border-radius: 50px;
-    box-shadow: 10px 10px 90px #f20044;
+    border-radius: 50%;
+    box-shadow: -10px -10px 90px #f20044, 10px 10px 90px #f20044;
+}
+
+.heart:before {
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the heart */
+}
+
+.heart:after {
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%); /* Center the heart */
 }
 
 .container {
