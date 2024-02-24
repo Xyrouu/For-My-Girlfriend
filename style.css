@@ -42,18 +42,18 @@ body {
     height: 70px;
     width: 70px;
     background: #f20044;
-    border-radius: 70px;
+    border-radius: 50%;
     box-shadow: -35px 0 30px #f20044, 35px 0 30px #f20044;
 }
 
 .heart:before {
     top: -35px;
-    left: 0;
+    left: -35px; /* Adjusted left position */
 }
 
 .heart:after {
-    top: 0;
-    left: -35px;
+    top: -35px;
+    left: 0; /* Adjusted left position */
 }
 
 .container {
