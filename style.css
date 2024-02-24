@@ -53,11 +53,11 @@ body {
 }
 
 .heart:before {
-    top: 0;
-    left: -50px;
+    top: -50px;
+    left: -50px; /* Adjusted */
 }
 
 .heart:after {
-    top: -50px;
-    left: 0;
+    top: 0;
+    left: 0; /* Adjusted */
 }
