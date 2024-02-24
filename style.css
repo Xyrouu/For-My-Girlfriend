@@ -1,3 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #FFC0CB, #FF69B4); /* Pink gradient background */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    max-width: 800px; /* Limiting container width */
+    padding: 0 20px; /* Adding padding */
+    color: #333; /* Text color */
+}
+
 .heart {
     height: 100px;
     width: 100px;
